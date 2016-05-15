@@ -1,11 +1,4 @@
-process.env.NODE_CONFIG_DIR = process.cwd() + '/config/env';
-
 var config = require('config');
-console.log(config);
-
-/* Also useful to only get Service-specific config:
-  var config = require('config').get('api');
-*/
 
 var express = require('express');
 var app = express();
@@ -17,4 +10,9 @@ app.get('/', function (req, res) {
 
 app.listen(port, function () {
   console.log('Example app listening on port', port);
+});
+
+
+process.on('SIGINT', function() {
+  // do cleanup
 });

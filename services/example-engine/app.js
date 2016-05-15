@@ -1,14 +1,16 @@
-process.env.NODE_CONFIG_DIR = process.cwd() + '/config/env';
-
 var config = require('config');
-console.log(config);
-
-/* Also useful to only get Service-specific config:
-  var config = require('config').get('engine');
-*/
 
 function doWork() {
-  //console.log('staying alive. keeping busy.');
+  console.log('staying alive. keeping busy.');
 }
 
-setInterval(doWork,5000);
+var runLoop = setInterval(doWork,5000);
+
+process.on('SIGINT', function() {
+  clearInterval(runLoop);
+
+  // setTimeout(function() {
+  //  // TODO What is the corect way to cleanup, then exit on SIGINT?
+  //  process.exit(0);
+  // }, 300);
+});
