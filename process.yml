@@ -1,14 +1,16 @@
 # http://pm2.keymetrics.io/docs/usage/application-declaration/
 
 apps:
-  - name : api
+  - 
+    name : api
     cwd : .
     script : ./services/example-api/app.js
     watch : true
     instances : 1
     out_file : ./logs/eample-api.log
     combine_logs : true
-  - name : engine
+  - 
+    name : engine
     script : ./services/example-engine/app.js
     watch : true
     instances : 1
