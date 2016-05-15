@@ -1,0 +1,14 @@
+{
+  "api": {
+    "port": "8001"
+  },
+  "database": {
+    "host": "localhost",
+    "port": "27017",
+    "db_name": "local"
+  },
+  "aws":{
+    "app_key": "xxxxxxxxxxxx",
+    "app_secret": "xyxyxyxyxyxyxyxyxyxyxyxy"
+  }
+}

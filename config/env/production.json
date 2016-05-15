@@ -1,8 +1,9 @@
 {
   "api": {
-    "port": 8000
+    "port": "8000"
   },
-  "database": "production database connection string here",
-  // TODO: How can we eval this at runtime?
-  "secrets": process.env.SECRET
+  "database": {
+    "db_name": "prod"
+  },
+  "secrets": ""
 }

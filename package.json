@@ -2,10 +2,15 @@
   "name": "node-micro-service-example",
   "version": "1.0.0",
   "author": "10Kft",
-  "contributors": [{
-    "name": "Shyam Habarakada",
-    "email": "shyam@10000ft.com"
-  }],
+  "contributors": [
+    {
+      "name": "Shyam Habarakada",
+      "email": "shyam@10000ft.com"
+    }
+  ],
+  "config": {
+    "ROOT_DIR": "SuperSuperSecret"
+  },
   "engines": {
     "npm": "^3.0.0"
   },
@@ -16,14 +21,15 @@
     "logs": "node_modules/pm2/bin/pm2 logs"
   },
   "dependencies": {
-    "pm2": "^1.1.0",
-    "underscore": "^1.8.3",
-    "express": "^4.0.0",
     "assert": "^1.0.0",
+    "config": "^1.20.1",
     "cors": "^2.0.0",
     "debug": "^2.0.0",
+    "express": "^4.0.0",
+    "pm2": "^1.1.0",
     "promise": "^7.0.0",
-    "serve-favicon": "^2.0.0"
+    "serve-favicon": "^2.0.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "mocha": "^2.4.0",

@@ -1,7 +1,12 @@
 {
   "api": {
-    "port": 8001
+    "port": "8002"
   },
-  "database": "local database connection string here",
-  "secrets": "NotARealSecret"
+  "database": {
+    "db_name": "dev"
+  },
+  "aws":{
+    "app_key": "zzzzzzzzzzzz",
+    "app_secret": "ababababababababab"
+  }
 }
