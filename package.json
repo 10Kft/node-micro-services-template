@@ -17,7 +17,7 @@
   "scripts": {
     "start": "node_modules/pm2/bin/pm2 start process.yml",
     "restart": "node_modules/pm2/bin/pm2 startOrReload process.yml",
-    "stop": "node_modules/pm2/bin/pm2 stop process.yml",
+    "stop": "node_modules/pm2/bin/pm2 delete all",
     "logs": "node_modules/pm2/bin/pm2 logs"
   },
   "dependencies": {
