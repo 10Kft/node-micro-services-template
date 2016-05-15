@@ -21,6 +21,7 @@
     "logs": "node_modules/pm2/bin/pm2 logs"
   },
   "dependencies": {
+    "js-yaml": "^3.6.0",
     "assert": "^1.0.0",
     "config": "^1.20.1",
     "cors": "^2.0.0",

@@ -1,9 +1,0 @@
-{
-  "api": {
-    "port": "8000"
-  },
-  "database": {
-    "db_name": "prod"
-  },
-  "secrets": ""
-}

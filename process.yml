@@ -19,6 +19,7 @@ apps:
     env    :
         NODE_ENV : development
         NODE_CONFIG_DIR : ./config/env
+        NODE_CONFIG_STRICT_MODE : 0
   -
     name : engine
     script : ./services/example-engine/app.js
@@ -32,3 +33,4 @@ apps:
     env    :
         NODE_ENV: development
         NODE_CONFIG_DIR : ./config/env
+        NODE_CONFIG_STRICT_MODE : 0

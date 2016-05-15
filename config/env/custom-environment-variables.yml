@@ -1,0 +1,9 @@
+# configurations that can be oerriden via ENV variables
+
+api:
+  database:
+    host: NODE_CONFIG_DATABASE_HOST
+    port: NODE_CONFIG_DATABASE_PORT
+    db_name: NODE_CONFIG_DATABASE_NAME
+  aws:
+    app_secret: NODE_CONFIG_AWS_APP_SECRET
