@@ -1,0 +1,33 @@
+{
+  "name": "node-micro-service-example",
+  "version": "1.0.0",
+  "author": "10Kft",
+  "contributors": [{
+    "name": "Shyam Habarakada",
+    "email": "shyam@10000ft.com"
+  }],
+  "engines": {
+    "npm": "^3.0.0"
+  },
+  "scripts": {
+    "start": "node_modules/pm2/bin/pm2 start process.yml",
+    "restart": "node_modules/pm2/bin/pm2 startOrReload process.yml",
+    "stop": "node_modules/pm2/bin/pm2 stop process.yml",
+    "logs": "node_modules/pm2/bin/pm2 logs"
+  },
+  "dependencies": {
+    "pm2": "^1.1.0",
+    "underscore": "^1.8.3",
+    "express": "^4.0.0",
+    "assert": "^1.0.0",
+    "cors": "^2.0.0",
+    "debug": "^2.0.0",
+    "promise": "^7.0.0",
+    "serve-favicon": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.0",
+    "should": "^8.0.0",
+    "supertest": "^1.2.0"
+  }
+}

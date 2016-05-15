@@ -1,0 +1,1 @@
+Generic library functions go here. For example, a faster way to do string padding, or calculate Pi.

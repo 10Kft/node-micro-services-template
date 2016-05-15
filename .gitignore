@@ -1,0 +1,10 @@
+**/node_modules
+logs
+*.log
+*.gz
+npm-debug.log*
+pids
+lib-cov
+.grunt
+*.db
+*.pem

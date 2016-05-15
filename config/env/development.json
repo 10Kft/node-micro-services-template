@@ -1,0 +1,7 @@
+{
+  "api": {
+    "port": 8001
+  },
+  "database": "local database connection string here",
+  "secrets": "NotARealSecret"
+}

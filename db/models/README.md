@@ -1,0 +1,1 @@
+All model definitions. These are shared among all the micro services within this app.
