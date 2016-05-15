@@ -18,3 +18,12 @@ app.get('/', function (req, res) {
 app.listen(port, function () {
   console.log('Example app listening on port', port);
 });
+
+
+process.on('SIGINT', function() {
+  // My process has received a SIGINT signal
+  // Meaning PM2 is now trying to stop the process
+
+  // So I can clean some stuff before the final stop
+  // d/c from database
+});

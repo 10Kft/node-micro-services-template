@@ -11,4 +11,19 @@ function doWork() {
   //console.log('staying alive. keeping busy.');
 }
 
-setInterval(doWork,5000);
+var intId = setInterval(doWork,5000);
+
+
+
+process.on('SIGINT', function() {
+  // My process has received a SIGINT signal
+  // Meaning PM2 is now trying to stop the process
+
+  // So I can clean some stuff before the final stop
+  clearInterval(intId);
+
+  setTimeout(function() {
+    // 300ms later the process kill it self to allow a restart
+    //process.exit(0);
+  }, 300);
+});

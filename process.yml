@@ -1,16 +1,26 @@
 # http://pm2.keymetrics.io/docs/usage/application-declaration/
 
+# Potential issues and fixes
+# [PM2][ERROR] Process 0 not found (https://github.com/Unitech/PM2/issues/304)
+# Using pm2 cli to interact with processes can cause issues. To resolve them, run npm install pm2 -g to get the latest pm2 version. This worked for me.
+
 apps:
   - name : api
     cwd : .
     script : ./services/example-api/app.js
+    ignore_watch : ["node_modules"]
     watch : true
-    instances : 1
-    out_file : ./logs/eample-api.log
+    instances : max
+    exec_mode : cluster
+    out_file : ./logs/example-api.log
+    err_file : ./logs/example-api.error.log
     combine_logs : true
   - name : engine
     script : ./services/example-engine/app.js
     watch : true
-    instances : 1
-    out_file : ./logs/eample-engine.log
+    ignore_watch : ["node_modules"]
+    instances : max
+    exec_mode : cluster
+    out_file : ./logs/example-engine.log
+    err_file : ./logs/example-engine.error.log
     combine_logs : true
