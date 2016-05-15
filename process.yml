@@ -10,17 +10,23 @@ apps:
     script : ./services/example-api/app.js
     ignore_watch : ["node_modules"]
     watch : true
-    instances : max
+    instances : 1
     exec_mode : cluster
     out_file : ./logs/example-api.log
-    err_file : ./logs/example-api.error.log
+    error_file : ./logs/example-api.error.log
     combine_logs : true
+    env    :
+        NODE_ENV : development
+        NODE_CONFIG_DIR : ./config/env
   - name : engine
     script : ./services/example-engine/app.js
     watch : true
     ignore_watch : ["node_modules"]
-    instances : max
+    instances : 1
     exec_mode : cluster
     out_file : ./logs/example-engine.log
-    err_file : ./logs/example-engine.error.log
+    error_file : ./logs/example-engine.error.log
     combine_logs : true
+    env    :
+        NODE_ENV: development
+        NODE_CONFIG_DIR : ./config/env

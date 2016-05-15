@@ -1,4 +1,4 @@
-process.env.NODE_CONFIG_DIR = process.cwd() + '/config/env';
+//process.env.NODE_CONFIG_DIR = process.cwd() + '/config/env';
 
 var config = require('config');
 console.log(config);
