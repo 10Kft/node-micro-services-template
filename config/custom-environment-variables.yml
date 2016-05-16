@@ -1,9 +1,0 @@
-api :
-    port : NODE_API_PORT
-database :
-    host : NODE_DB_HOST
-    port : NODE_DB_PORT
-    db_name : NODE_DB_NAME
-aws :
-    app_key : NODE_AWS_KEY
-    app_secret : NODE_AWS_SECRET

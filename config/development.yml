@@ -1,7 +1,0 @@
-api :
-    port : 8002
-database :
-    db_name : dev
-aws :
-    app_key : zzzzzzzzzzzz
-    app_secret : ababababababababab

@@ -1,3 +1,5 @@
+process.env.NODE_CONFIG_DIR = process.cwd() + '/config/env';
+
 var path = require('path');
 var request = require('supertest');
 var serverPath = path.join(process.cwd(), '/services/example-api/app.js');
@@ -13,6 +15,7 @@ describe('Loading Express', function () {
   it('responds to /', function testSlash(done) {
     request(server)
       .get('/')
+      .expect('Hello World!')
       .expect(200, done);
   });
   it('404 everything else', function testPath(done) {
