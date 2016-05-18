@@ -6,7 +6,7 @@ How to run this project,
 * cd into project directory
 * npm install
 * npm start
-* navigate to http://localhost:8001
+* navigate to http://localhost:8002
 
 To stop services,
 
