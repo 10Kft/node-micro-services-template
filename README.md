@@ -28,7 +28,7 @@ At this point, *pm2* is in your path and you can use any pm2 commands to manage 
 * To view logs, run `pm2 logs`
 * To view status of running processes, run `pm2 status`
 
-`OPEN-ISSUE:` The current least hacky solution for getting local npm modules path (above) means that you must run all these from within the same directory as the parent of your local `npm_modules` dir. IOW, if you have the same modules in your global npm cache and you run a command from a directory within your project other than this specific location, your shell will use the global version of that binary. There isn't a lot we can do at this point besides keeping this in mind.
+> `OPEN-ISSUE:` The current least hacky solution for getting local npm modules path (above) means that you must run all these from within the same directory as the parent of your local `npm_modules` dir. IOW, if you have the same modules in your global npm cache and you run a command from a directory within your project other than this specific location, your shell will use the global version of that binary. There isn't a lot we can do at this point besides keeping this in mind.
 
 # Project Structure
 
